@@ -14,22 +14,27 @@ body {
 
 header {
     height: 100px;
+    line-height: 100px;
     background-color: #222;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
 header img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    margin-right: 20px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
 }
 
 header h1 {
+    text-align: center;
     color: #fff;
     margin-left: 10px;
     font-family: 'Press Start 2P', cursive;
+    font-size: 3em;
 }
 
 main,
@@ -45,16 +50,25 @@ main article {
     padding: 2em;
 }
 
-main article h2 {
+main section h2 {
     border-bottom: 1px dashed #222;
-    width: 350px;
+    width: 700px;
+    margin-left: 1em;
+    margin-right: auto;
+    padding-top: 2em;
+    font-size: 2.5em;
+}
+
+main article h3 {
     margin-bottom: 1em;
+    font-size: 1.5em;
 }
 
 main article p {
     letter-spacing: 2px;
     line-height: 28px;
     padding: 10px 2px;
+    font-size: 1.1em;
 }
 
 main article ul,
@@ -65,28 +79,11 @@ main article ol {
 }
 
 main article img {
-    width: 555px;
-    border: 2px dotted rgba(84, 1, 119, 1);
-}
-
-main article blockquote {
-    background-color: #222;
-    color: #fff;
-    width: fit-content;
-    padding: 10px;
-    margin: 2em 0;
-    position: relative;
-}
-
-main article blockquote:before {
-    content: '';
     display: block;
-    position: absolute;
-    left: 0px;
-    top: 0;
-    height: 68px;
-    width: 8px;
-    background-color: rgba(84, 1, 119, 1);
+    width: 555px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 2px dotted rgba(84, 1, 119, 1);
 }
 
 em,
@@ -96,9 +93,20 @@ strong {
 }
 
 iframe {
-    margin-top: 1em;
+    display: block;
+    margin: 1em auto;
     border-radius: 1em;
     box-shadow: 5px 5px 10px 2px #222;
+}
+
+main section:nth-child(3) article p {
+    text-align: center;
+    font-size: 3em;
+    line-height: 1.5em;
+    color: transparent;
+    background: linear-gradient(to bottom, #666, #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 footer p {
