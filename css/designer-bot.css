@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Underdog&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Underdog', cursive;
+}
+
+body {
+    background-attachment: fixed;
+    background: linear-gradient(90deg, rgba(6, 0, 102, 1) 0%, rgba(84, 1, 119, 1) 46%, rgba(1, 111, 150, 1) 100%, rgba(1, 145, 185, 1) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+header {
+    height: 100px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+header h1 {
+    color: #fff;
+    margin-left: 10px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+main,
+footer {
+    width: 900px;
+    margin: 3em auto;
+    background-color: #fff;
+    border-radius: 2em;
+    box-shadow: 5px 5px 10px 2px #222;
+}
+
+main article {
+    padding: 2em;
+}
+
+main article h2 {
+    border-bottom: 1px dashed #222;
+    width: 350px;
+    margin-bottom: 1em;
+}
+
+main article p {
+    letter-spacing: 2px;
+    line-height: 28px;
+    padding: 10px 2px;
+}
+
+main article ul,
+main article ol {
+    line-height: 28px;
+    font-size: 1.5em;
+    padding: 20px 40px;
+}
+
+main article img {
+    width: 555px;
+    border: 2px dotted rgba(84, 1, 119, 1);
+}
+
+main article blockquote {
+    background-color: #222;
+    color: #fff;
+    width: fit-content;
+    padding: 10px;
+    margin: 2em 0;
+    position: relative;
+}
+
+main article blockquote:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    height: 68px;
+    width: 8px;
+    background-color: rgba(84, 1, 119, 1);
+}
+
+em,
+strong {
+    color: rgba(202, 0, 0, 0.897);
+    font-size: 1.2em;
+}
+
+iframe {
+    margin-top: 1em;
+    border-radius: 1em;
+    box-shadow: 5px 5px 10px 2px #222;
+}
+
+footer p {
+    padding: 1em;
+    font-size: 1.2em;
+    text-align: center;
+}
